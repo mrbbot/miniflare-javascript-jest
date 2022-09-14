@@ -1,0 +1,12 @@
+name = "miniflare-javascript-jest"
+main = "src/index.js"
+compatibility_date = "2022-09-14"
+
+[durable_objects]
+bindings = [
+  { name = "COUNTER", class_name = "Counter" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Counter"]
